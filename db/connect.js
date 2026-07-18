@@ -8,7 +8,7 @@ const initDb = async () => {
         return _db;
     }
     const client = await MongoClient.connect(process.env.MONGODB_URI);
-    _db = client.db(); // uses the database name from your connection string (contacts)
+    _db = client.db();
     return _db;
 };
 

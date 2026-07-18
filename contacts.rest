@@ -3,3 +3,31 @@ GET http://localhost:8080/contacts
 ###
 
 GET http://localhost:8080/contacts/6a52d72ae99cbd1411e3a729
+
+
+### POST a new contact
+POST http://localhost:8080/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Sarah",
+  "lastName": "Ditto",
+  "email": "sarah.ditto@example.com",
+  "favoriteColor": "white",
+  "birthday": "1999-06-15"
+}
+
+### PUT update a contact
+PUT http://localhost:8080/contacts/6a5c0c988874d921c6cb971c
+Content-Type: application/json
+
+{
+  "firstName": "Sarah",
+  "lastName": "Ditto",
+  "email": "sarah.ditto.updated@example.com",
+  "favoriteColor": "maroon",
+  "birthday": "1999-06-15"
+}
+
+### DELETE a contact
+DELETE http://localhost:8080/contacts/6a5c0cb08874d921c6cb971d
