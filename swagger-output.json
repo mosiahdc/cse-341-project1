@@ -5,7 +5,7 @@
     "description": "API for storing and retrieving contact information",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse-341-project1-b58x.onrender.com:8080",
   "basePath": "/",
   "schemes": [
     "http"
